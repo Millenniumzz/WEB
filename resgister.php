@@ -17,6 +17,6 @@
         <tr><td>email:</td><td><input type="text" name="email"></td></tr>
         <tr><td colspan="2" align="center"><input type="submit"value="submit"></td>
     </table>
-    <p style="text-align: center;"><a href="index.html">back to page</a></p>
+    <p style="text-align: center;"><?php echo "<a href=index.php>back to page</a>"?></p>
 </body>
 </html>

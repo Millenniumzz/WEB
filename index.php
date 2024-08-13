@@ -14,7 +14,14 @@
             <option value="general">เรื่องทั้วไป</option>
             <option value="study">เรื่องเรียน</option>
         </select>
-        <a href="login.html" style="float:right;">เข้าสู่ระบบ</a>
+        <?php
+        session_start()
+        if(!isset($_SESSION['user'])){
+            echo "<a href=login.php style=float:right;>เข้าสู่ระบบ</a>";
+        }else{  
+        echo ผู้ใช้งานระบบ:$_SESSION["user"]"<a href=login.html style=float:right;>ออกจากระบบ</a>";
+        }
+        ?>
         <ul>
             <?php
                 for($k=1;$k<=10;$k++)

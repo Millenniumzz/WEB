@@ -17,6 +17,6 @@
         </table>
     </form>
     <br>
-    <p style="text-align: center;">ถ้ายังไม่ได้เป็นสมาชิก <a href="resgister.html">กรุณาสมัครสมาชิก</a></p>
+    <p style="text-align: center;"><?php echo "ถ้ายังไม่ได้เป็นสมาชิก<a href=resgister.php>กรุณาสมัครสมาชิก</a>" ?></p>
 </body>
-</html>
+</html> 
