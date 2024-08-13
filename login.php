@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,5 +19,6 @@
     </form>
     <br>
     <p style="text-align: center;"><?php echo "ถ้ายังไม่ได้เป็นสมาชิก<a href=resgister.php>กรุณาสมัครสมาชิก</a>" ?></p>
+    <?php if(isset($_SESSION['id'])){header("Location:index.php");die();}?>
 </body>
 </html> 

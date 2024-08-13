@@ -27,11 +27,21 @@
         <br>
         <a href='newpost.php'>สร้างกระทู้ใหม่</a>
         <ul>
-            <?php
-                for($k=1;$k<=10;$k++)
+            <?php 
+                if(isset($_SESSION['id'])&& $_SESSION['role']=='a')
                 {
-                    echo "<li><a href=post.php?id=$k>กระทู้ที่ $k</a>&nbsp<a href=delete.php?id=$k>ลบ</a></li>";
-                }              
+                    for($k=1;$k<=10;$k++)
+                    {
+                    echo "<li><a href=post.php?id=$k>กระทู้ที่ $k</a>&nbsp&nbsp&nbsp&nbsp<a href=delete.php?id=$k>ลบ</a></li>";
+                    }
+                }
+                if(isset($_SESSION['id'])&& $_SESSION['role']=='m')
+                {
+                    for($k=1;$k<=10;$k++)
+                    {
+                    echo "<li><a href=post.php?id=$k>กระทู้ที่ $k</a></li>";        
+                    }   
+                }   
             ?>
         </ul>
     

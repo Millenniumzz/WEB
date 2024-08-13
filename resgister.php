@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,5 +19,6 @@
         <tr><td colspan="2" align="center"><input type="submit"value="submit"></td>
     </table>
     <p style="text-align: center;"><?php echo "<a href=index.php>back to page</a>"?></p>
+    <?php if(isset($_SESSION['id'])){header("Location:index.php");die();}?>
 </body>
 </html>
