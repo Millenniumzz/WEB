@@ -15,11 +15,11 @@
             <option value="study">เรื่องเรียน</option>
         </select>
         <?php
-        session_start()
+        session_start();
         if(!isset($_SESSION['user'])){
             echo "<a href=login.php style=float:right;>เข้าสู่ระบบ</a>";
         }else{  
-        echo ผู้ใช้งานระบบ:$_SESSION["user"]"<a href=login.html style=float:right;>ออกจากระบบ</a>";
+        echo ผู้ใช้งานระบบ:$_SESSION['user']"<a href=login.html style=float:right;>ออกจากระบบ</a>";
         }
         ?>
         <ul>
