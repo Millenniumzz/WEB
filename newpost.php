@@ -24,7 +24,7 @@
             <?php
         }
         else{
-            header("Location:index.php");
+            header("location:index.php");
             die();
         }
         ?>
