@@ -2,8 +2,8 @@
 if(isset($_SESSION['id'])&& $_SESSION['role']=='a'){
     $id=$_GET['id'];
     echo "ลบกระทู้ หมายเลข $id";
-}else
+}else{
     header("location:index.php");
     die();
-
+}
 ?>
