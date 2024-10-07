@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <style>
+        table,td,tr{
+            border:2px solid black;
+            border-collapse: collapse;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr><td colspan="3">First Name: <input type="text" name="first" style="width:300px;"><br>Last Name: <input type="text" name="last" value="--นามสกุล--"></td></tr>
+        <tr><td rowspan="3"><input type="radio" name="gender" value="m">Man <br><input type="radio" name="gender" value="w">Women</td>
+        <td rowspan="3"><input type="checkbox" name="hobby">
+            Yoga <br>   
+            <input type="checkbox" name="hobby">
+            Play Game <br>
+            <input type="checkbox" name="hobby">
+            Football</td>
+        <td><select name="member"> <option value="สมาชิก">--สมาชิก--</option>
+        <option value="เป็น">เป็นสมาชิก</option>
+        <option value="ไม่">ไม่เป็นสมาชิก</option></select></td>
+        <tr><td style="text-align: center;"><mark><b>EnET-C</b></mark>&<i><del>ECT</del></i></td></tr>
+        <tr><td style="text-align: center;"><input type="date" name="time"></td></tr>
+        </tr>
+        
+        <tr><td colspan="3" style="text-align:center;"><input type="submit" value="Ok"></td></tr>
+        
+    </table>
+</body>
+</html>

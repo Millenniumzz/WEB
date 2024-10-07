@@ -1,0 +1,101 @@
+/*(1) ซีเล็กเตอร์ชนิดอิลิเมนต์ชื่อ body,td,th ให้มีการแสดงผลดังนี้ */ body,td,th{
+	/*(2) กำหนดชนิดฟอนต์เป็น Arial, Helvetica, sans-serif  */font-family:Arial, Helvetica, sans-serif;
+	/*(3) กำหนดขนาดตัวอักษรเป็น 13px */font-size:13px; 
+	/*(4) กำหนดสีเป็น 2E2E2E */color:#2E2E2E;
+}
+
+body {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/taling.jpg);
+	background-repeat:repeat-x;
+}
+
+/*(5) ซีเล็กเตอร์เทียมประเภทคลาส สไตล์จะทำงานก็ต่อเมื่ออิลิเมนต์นั้นๆเป็นลิงค์ โดยใช้กับแท็ก a ให้มีการแสดงผลดังนี้ */ a:link{
+	color: #1E87D2;
+}
+
+/*(6) ซีเล็กเตอร์เทียมประเภทคลาส สไตล์จะทำงานก็ต่อเมื่อเคยมีการคลิกลิงค์ดังกล่าวแล้ว โดยใช้กับแท็ก a ให้มีการแสดงผลดังนี้ */ a:visited{
+	color: #1E87D2;
+}
+
+/*(7) ซีเล็กเตอร์เทียมประเภทคลาส สไตล์จะทำงานก็ต่อเมื่อเคยมีการนำเมาส์ไปวางไว้เหนือลิงค์หรืออิลิเมนต์อื่นๆ โดยใช้กับแท็ก a ให้มีการแสดงผลดังนี้ */ a:hover{
+	color: #1E87D2;
+}
+
+/*(8) ซีเล็กเตอร์เทียมประเภทคลาส สไตล์จะทำงานก็ต่อเมื่อลิงค์ถูกคลิก โดยใช้กับแท็ก a ให้มีการแสดงผลดังนี้ */ a:active{
+	color: #1E87D2;
+}
+
+.header{
+	/*(9) กำหนดสีพื้นหลังเป็น FFFFFF */background-color: #FFFFFF;
+}
+
+.menu{
+	background-image:url(images/menutal.jpg);
+	background-repeat:repeat-x;
+}
+
+/*(10) ซีเล็กเตอร์ชนิดคลาสชื่อ menuLs และมีซีเล็กเตอร์ย่อยถัดไปคือ li ให้มีการแสดงผลดังนี้ */.menuLs li{ 
+	/*(11) กำหนดการแสดงเป็นแบบ inline */display: inline;
+	/*(12) กำหนดระยะห่างภายนอกด้านซ้ายเป็น 5px */margin-left: 5px;
+	/*(13) กำหนดระยะห่างภายนอกด้านขวาเป็น 28px */margin-right: 28px;
+	font-size:14px
+}
+
+.menuLs ul{ 
+	display:inline;
+}
+
+/*(14) ซีเล็กเตอร์ชนิดเอกลักษณ์ชื่อ WhiteColor ให้มีการแสดงผลดังนี้ */#WhiteColor{
+	color:#000000;
+}
+
+/*(15) ซีเล็กเตอร์ชนิดเอกลักษณ์ชื่อ WhiteColor2 ให้มีการแสดงผลดังนี้ */#WhiteColor2{
+	color:#000000;
+	/*(16) กำหนดให้การตกแต่งข้อความ ไม่มีขีดเส้นใต้ */text-decoration:none;
+}
+
+.topMenu{
+	background-image:url(images/cats.jpg);
+	background-repeat:repeat-x;
+}
+
+.LeftMenuHeader{
+	font-size:18px;
+	color:#000000;
+	padding-left:10px;
+}
+
+.RightMenu ul{
+	width:192px;
+	margin:0px;
+	padding:0px;
+}
+
+.RightMenu li{
+	height:20px;
+	background-image:url(images/menulft.jpg);
+	background-repeat:repeat-x;
+	color:#000000;
+	list-style: none;
+	padding-left:25px;
+	padding-top:4px;
+}
+
+.BodyBkg{
+	background-image:url(images/products.jpg);
+	background-repeat:no-repeat;
+}
+
+.style1{
+	font-size: 28px;
+	/*(17) กำหนดขนาดน้ำหนักของฟอนต์เป็นตัวหนา */font-weight: bold;
+}
+
+.Pr{
+	/*(18) กำหนดให้ลอยซ้าย */float:left
+}
