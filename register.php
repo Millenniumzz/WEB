@@ -18,7 +18,7 @@
             <?php
                 if (isset($_SESSION['add_login'])) {
                     if ($_SESSION['add_login'] == 'error') {
-                        echo "<div class='alert alert-danger'  role='alert'>ชื่อบัญชีนี้ถูกใช้งานแล้ว</div>";
+                        echo "<div class='alert alert-danger' role='alert'>ชื่อบัญชีนี้ถูกใช้งานแล้ว</div>";
                     } else {
                         echo "<div class='alert alert-success' role='alert'>เพิ่มบัญชีเรียบร้อยแล้ว</div>";
                     }

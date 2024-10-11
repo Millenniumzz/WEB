@@ -4,6 +4,7 @@ $passwd = sha1($_POST['pwd']);
 $name = $_POST['name'];
 $gender = $_POST['gender'];
 $email = $_POST['email'];
+session_start(); 
 
 $conn= new PDO("mysql:host=localhost;dbname=webboard;charset=utf8","root","");
 

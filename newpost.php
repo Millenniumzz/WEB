@@ -14,7 +14,7 @@
         <h1 style="text-align:center;" class="mt-3">Webboard KaKao</h1>
         <?php include "navbar.php" ?>
     </div>
-    <div class="card text-dark bg-white border-info">
+    <div class="card mx-auto text-dark bg-white border-info mt-3" style="margin:20px; width: 40rem;">
         <div class="card-header bg-info text-white">ตั้งกระทู้ใหม่</div>
         <div class="card-body">
             <form action="newpost_save.php" method="post">
@@ -57,5 +57,6 @@
             </form>
         </div>
     </div>
+    
 </body>
 </html>
